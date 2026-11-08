@@ -100,5 +100,32 @@ body {
     &:hover {
       background-color: $color-green-700;
     }
+    & img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    width: 100%;
+    max-width: 600px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    &__image img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__details {
+      gap: $spacing-400;
+    }
+
+    &__name-and-description {
+      gap: $spacing-300;
+    }
   }
 }

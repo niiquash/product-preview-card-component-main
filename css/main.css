@@ -110,5 +110,28 @@ body {
 .product-card__add-to-cart:hover {
   background-color: #1a4032;
 }
+.product-card__add-to-cart img {
+  width: 18px;
+  height: 18px;
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .product-card__image img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .product-card__details {
+    gap: 32px;
+  }
+  .product-card__name-and-description {
+    gap: 24px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
