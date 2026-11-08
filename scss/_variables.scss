@@ -1,0 +1,28 @@
+// Colors
+$color-black: #1c232b;
+$color-grey: #6c7289;
+$color-cream: #f2eae2;
+$color-white: #ffffff;
+$color-green-500: #3d8168;
+$color-green-700: #1a4032;
+
+// Spacing
+$spacing-50: 4px;
+$spacing-100: 8px;
+$spacing-150: 12px;
+$spacing-200: 16px;
+$spacing-300: 24px;
+$spacing-400: 32px;
+$spacing-500: 40px;
+
+// Typography
+$font-primary: "Fraunces", serif;
+$font-secondary: "Montserrat", sans-serif;
+
+@mixin typography($font, $size, $weight, $height, $spacing) {
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
